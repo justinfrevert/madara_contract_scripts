@@ -18,6 +18,9 @@ export const erc20ClassHash = "0x4596fa4856bbf13f3448a376d607f8852148b0e6be4b958
 
 export const classHashNoValidate = "0x35ccefcf9d5656da623468e27e682271cd327af196785df99e7fee1436b6276";
 
+export const ozAddress = "0x0000000000000000000000000000000000000000000000000000000000000003";
+export const ozPrivateKey = "0xc1cf1490de1352865301bb8705143f3ef938f97fdf892f1090dcb5ac7bcd1d";
+
 export const feeABI = JSON.parse(
     await readFile(
       new URL('../contracts/FeeContract/erc20.json', import.meta.url)

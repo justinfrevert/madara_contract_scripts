@@ -1,5 +1,6 @@
 import { Account } from 'starknet';
-import { provider, preDeployedAddress, preDeployedPrivateKey } from '../../utils/constants.js';
+// import { provider, preDeployedAddress, preDeployedPrivateKey } from '../../utils/constants.js';
+import { provider, ozAddress, ozPrivateKey } from '../../utils/constants.js';
 
 import { readFile } from 'fs/promises';
 
@@ -16,7 +17,7 @@ const sierra = JSON.parse(
 );
 
 
-const account = new Account(provider, preDeployedAddress, preDeployedPrivateKey, "0");
+const account = new Account(provider, ozAddress, ozPrivateKey, "0");
 
 const declareResult = await account.declare(
     {

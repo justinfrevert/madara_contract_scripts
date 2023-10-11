@@ -1,8 +1,7 @@
 import { Account } from 'starknet';
-import { provider, preDeployedAddress, preDeployedPrivateKey, classHashHelloStarknet } from '../../utils/constants.js';
+import { provider, ozAddress, ozPrivateKey, classHashHelloStarknet } from '../../utils/constants.js';
 
-
-const account = new Account(provider, preDeployedAddress, preDeployedPrivateKey, "0");
+const account = new Account(provider, ozAddress, ozPrivateKey, "0");
 
 const deployResponse = await account.deployContract(
     { 
